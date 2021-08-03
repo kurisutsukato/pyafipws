@@ -592,14 +592,14 @@ class WebClient(object):
         if args:
             location += "/".join(args)
         if self.method == "GET":
-            location += "?%s" % urlencode(vars)
+            location += "?%s" % urlencode(vars).encode('utf-8')
 
         # prepare the request content suitable to be sent to the server:
         if self.enctype == "multipart/form-data":
             boundary, body = self.multipart_encode(vars)
             content_type = "%s; boundary=%s" % (self.enctype, boundary)
         elif self.enctype == "application/x-www-form-urlencoded":
-            body = urlencode(vars)
+            body = urlencode(vars).encode('utf-8')
             content_type = self.enctype
         else:
             body = None
