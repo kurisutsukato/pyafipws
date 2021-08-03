@@ -11,8 +11,8 @@
 # for more details.
 
 "Módulo para obtener un ticket de autorización del web service WSAA de AFIP"
-from __future__ import print_function
-from __future__ import absolute_import
+#from __future__ import print_function
+#from __future__ import absolute_import
 
 # Basado en wsaa-client.php de Gerardo Fisanotti - DvSHyS/DiOPIN/AFIP - 13-apr-07
 # Definir WSDL, CERT, PRIVATEKEY, PASSPHRASE, SERVICE, WSAAURL
@@ -52,8 +52,8 @@ except ImportError:
 
 # Constantes (si se usa el script de linea de comandos)
 WSDL = "https://wsaahomo.afip.gov.ar/ws/services/LoginCms?wsdl"  # El WSDL correspondiente al WSAA
-CERT = "reingart.crt"  # El certificado X.509 obtenido de Seg. Inf.
-PRIVATEKEY = "reingart.key"  # La clave privada del certificado CERT
+CERT = "kristukat.crt"  # El certificado X.509 obtenido de Seg. Inf.
+PRIVATEKEY = "kristukat.key"  # La clave privada del certificado CERT
 PASSPHRASE = "xxxxxxx"  # La contraseña para firmar (si hay)
 SERVICE = "wsfe"  # El nombre del web service al que se le pide el TA
 

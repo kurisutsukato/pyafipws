@@ -14,8 +14,8 @@
 WSBFEv1 de AFIP (Bonos Fiscales electronicos v1.1 - Factura Electrónica RG)
 a fin de gestionar los Bonos en la Secretaría de Industria según RG 2557
 """
-from __future__ import print_function
-from __future__ import absolute_import
+#from __future__ import print_function
+#from __future__ import absolute_import
 
 from builtins import str
 

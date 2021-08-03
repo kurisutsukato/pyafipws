@@ -11,9 +11,9 @@
 # for more details.
 
 "Módulo para generar PDF de facturas electrónicas"
-from __future__ import division
-from __future__ import print_function
-from __future__ import absolute_import
+#from __future__ import division
+#from __future__ import print_function
+#from __future__ import absolute_import
 
 from future import standard_library
 
@@ -1541,7 +1541,7 @@ class FEPDF(object):
                     else:
                         barras = ""
 
-                    f.set("CodigoBarras", unicode(barras))
+                    f.set("CodigoBarras", str(barras))
                     f.set("CodigoBarrasLegible", barras)
 
                     if not HOMO and barras and fact.get("resultado") == "A":

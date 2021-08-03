@@ -13,8 +13,8 @@
 """Módulo para obtener código de operación electrónico (COE) para 
 Liquidación Primaria Electrónica de Granos del web service WSLPG de AFIP
 """
-from __future__ import print_function
-from __future__ import absolute_import
+#from __future__ import print_function
+#from __future__ import absolute_import
 
 from future import standard_library
 

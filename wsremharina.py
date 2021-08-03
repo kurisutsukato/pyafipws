@@ -13,8 +13,8 @@
 """Módulo para obtener Remito Electronico Harinero:
 del servicio web RemHarinaService versión 2.0 de AFIP (RG4514/19)
 """
-from __future__ import print_function
-from __future__ import absolute_import
+#from __future__ import print_function
+#from __future__ import absolute_import
 
 from future import standard_library
 

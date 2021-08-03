@@ -13,8 +13,8 @@
 """Módulo para obtener Remito Electronico Azucar:
 del servicio web RemAzucarService versión 2.0.3 de AFIP (RG4519/19)
 """
-from __future__ import print_function
-from __future__ import absolute_import
+#from __future__ import print_function
+#from __future__ import absolute_import
 
 from future import standard_library
 

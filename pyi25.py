@@ -11,9 +11,9 @@
 # for more details.
 
 "Módulo para generar códigos de barra en Entrelazado 2 de 5 (I25)"
-from __future__ import division
-from __future__ import print_function
-from __future__ import absolute_import
+#from __future__ import division
+#from __future__ import print_function
+#from __future__ import absolute_import
 
 from builtins import str
 from builtins import range

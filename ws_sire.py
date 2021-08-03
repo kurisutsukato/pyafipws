@@ -13,8 +13,8 @@
 """Módulo para emitir un certificado C2005 en AFIP mediante WebService (SOAP), 
 por parte de los sistemas del agente de retención.
 """
-from __future__ import print_function
-from __future__ import absolute_import
+#from __future__ import print_function
+#from __future__ import absolute_import
 
 from future import standard_library
 

@@ -14,8 +14,8 @@
 WSMTX de AFIP (Factura Electrónica Mercado Interno con codificación de 
 productos) según RG2904 (opción A con detalle) y RG2926/10 (CAE anticipado).
 """
-from __future__ import print_function
-from __future__ import absolute_import
+#from __future__ import print_function
+#from __future__ import absolute_import
 
 from builtins import str
 

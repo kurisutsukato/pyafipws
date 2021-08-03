@@ -11,8 +11,8 @@
 # for more details.
 
 "Módulo con funciones auxiliares para el manejo de errores y temas comunes"
-from __future__ import division
-from __future__ import print_function
+#from __future__ import division
+#from __future__ import print_function
 
 from future import standard_library
 

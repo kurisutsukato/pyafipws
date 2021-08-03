@@ -12,8 +12,8 @@
 
 """Módulo para Trazabilidad de Productos Médicos ANMAT - Disp. 2303/2014
 según Especificación Técnica para Pruebas de Servicios (17/09/2015)"""
-from __future__ import print_function
-from __future__ import absolute_import
+#from __future__ import print_function
+#from __future__ import absolute_import
 
 # Información adicional y documentación:
 # http://www.sistemasagiles.com.ar/trac/wiki/TrazabilidadProductosMedicos

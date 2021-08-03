@@ -12,7 +12,7 @@
 # for more details.
 
 "Py2Exe extension to build NSIS Installers"
-from __future__ import print_function
+#from __future__ import print_function
 
 # Based on py2exe/samples/extending/setup.py:
 #   "A setup script showing how to extend py2exe."

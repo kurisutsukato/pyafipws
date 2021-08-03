@@ -6,8 +6,8 @@
 #
 
 "Creador de instalador para PyAfipWs"
-from __future__ import print_function
-from __future__ import absolute_import
+#from __future__ import print_function
+#from __future__ import absolute_import
 
 __author__ = "Mariano Reingart (reingart@gmail.com)"
 __copyright__ = "Copyright (C) 2008-2021 Mariano Reingart"
@@ -31,6 +31,7 @@ __version__ = "%s.%s.%s" % (sys.version_info[0:2] + (rev,))
 HOMO = True
 
 import setuptools
+import glob
 
 kwargs = {}
 desc = (
@@ -40,7 +41,7 @@ desc = (
 kwargs["package_dir"] = {"pyafipws": "."}
 kwargs["packages"] = ["pyafipws"]
 opts = {}
-data_files = []
+data_files = [('plantillas', glob.glob('plantilaas/*'))]
 
 
 long_desc = (

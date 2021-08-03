@@ -11,8 +11,8 @@
 # for more details.
 
 "Módulo para enviar correos electrónicos"
-from __future__ import print_function
-from __future__ import absolute_import
+#from __future__ import print_function
+#from __future__ import absolute_import
 
 from future import standard_library
 

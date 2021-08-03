@@ -11,8 +11,8 @@
 # for more details.
 
 "Módulo Trazabilidad de Productos Veterinarios SENASA Resolución 369/2013"
-from __future__ import print_function
-from __future__ import absolute_import
+#from __future__ import print_function
+#from __future__ import absolute_import
 
 # Información adicional y documentación:
 # http://www.sistemasagiles.com.ar/trac/wiki/TrazabilidadProductosVeterinarios

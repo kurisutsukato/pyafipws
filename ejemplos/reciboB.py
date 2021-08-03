@@ -36,18 +36,18 @@ CERT = "../kristukat.crt"
 PRIVATEKEY = "../kristukat.key"
 CACHE = "../cache"
 CONF_PDF = dict(
-    LOGO="../plantillas/logo.png",
-    EMPRESA="Empresa de Prueba",
-    MEMBRETE1="Direccion de Prueba",
-    MEMBRETE2="Capital Federal",
-    CUIT="CUIT 23-94968971-9",
-    IIBB="exento",
-    IVA="IVA Responsable Inscripto",
-    INICIO="Inicio de Actividad: 01/04/2006",
+    LOGO=None,#"../plantillas/logo.png",
+    EMPRESA="Cooperadora Prestamod de Honor",
+    MEMBRETE1="DE GAINZA M. GRAL. 1050",
+    MEMBRETE2="1405-CIUDAD AUTONOMA BUENOS AIRES",
+    CUIT="CUIT 30-65177749-2",
+    #IIBB="exento",
+    IVA="IVA EXCENTO",
+    INICIO="Inicio de Actividad: 01/04/1823",
 )
 
 
-def facturar(registros):
+def recibo(registros):
     """Rutina para emitir facturas electrónicas en PDF c/CAE AFIP Argentina"""
 
     # inicialización AFIP:
@@ -63,7 +63,7 @@ def facturar(registros):
 
     # inicialización PDF
     fepdf = FEPDF()
-    fepdf.CargarFormato("factura.csv")
+    fepdf.CargarFormato("recibo.csv")
     fepdf.FmtCantidad = "0.2"
     fepdf.FmtPrecio = "0.2"
     fepdf.CUIT = CUIT
@@ -111,7 +111,7 @@ def facturar(registros):
         ok = cbte.autorizar(wsfev1)
         nro = cbte.encabezado["cbte_nro"]
         print("Factura autorizada", nro, cbte.encabezado["cae"])
-        if "homo" in URL_WSFEv1:
+        if False and "homo" in URL_WSFEv1:
             cbte.encabezado["motivos_obs"] = "Ejemplo Sin validez fiscal"
         ok = cbte.generar_pdf(fepdf, "factura_{}.pdf".format(nro))
         print("PDF generado", ok)
@@ -134,7 +134,7 @@ class Comprobante:
             imp_iva=0.00,
             moneda_id="PES",
             moneda_ctz=1.000,
-            obs="Observaciones Comerciales, libre",
+            obs="",#Observaciones Comerciales, libre",
             concepto=1,
             fecha_serv_desde=None,
             fecha_serv_hasta=None,
@@ -146,8 +146,8 @@ class Comprobante:
             pais_dst_cmp=200,
             id_impositivo="Consumidor Final",
             forma_pago="30 dias",
-            obs_generales="Observaciones Generales<br/>linea2",
-            obs_comerciales="Observaciones Comerciales<br/>texto libre",
+            obs_generales="",#Observaciones Generales<br/>linea2",
+            obs_comerciales="",#Observaciones Comerciales<br/>texto libre",
             motivo_obs="",
             cae="",
             resultado="",
@@ -315,7 +315,7 @@ if __name__ == "__main__":
     # poder recuperarlas (reproceso automático) si hay falla de comunicación
     regs = [
         {
-            "dni": i,
+            "dni": 231235596,
             "nombre": "Juan Perez",
             "domicilio": "Balcarce 50",
             "descripcion": "Cuota Social Enero",
@@ -323,6 +323,5 @@ if __name__ == "__main__":
             "periodo_desde": "20190101",
             "periodo_hasta": "20190131",
         }
-        for i in range(1, 10)
     ]
-    facturar(regs)
+    recibo(regs)

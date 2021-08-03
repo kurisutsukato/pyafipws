@@ -11,9 +11,9 @@
 # for more details.
 
 "Herramienta para procesar y consultar el Padrón Unico de Contribuyentes AFIP"
-from __future__ import division
-from __future__ import print_function
-from __future__ import absolute_import
+#from __future__ import division
+#from __future__ import print_function
+#from __future__ import absolute_import
 
 # Documentación e información adicional:
 #    http://www.sistemasagiles.com.ar/trac/wiki/PadronContribuyentesAFIP

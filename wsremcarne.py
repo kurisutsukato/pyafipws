@@ -13,8 +13,8 @@
 """Módulo para obtener Remito Electronico Carnico:
 del web service WSRemCarne versión 3.0 de AFIP (RG4256/18 y RG4303/18)
 """
-from __future__ import print_function
-from __future__ import absolute_import
+#from __future__ import print_function
+#from __future__ import absolute_import
 
 from future import standard_library
 

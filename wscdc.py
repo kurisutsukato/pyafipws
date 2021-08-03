@@ -11,8 +11,8 @@
 # for more details.
 
 "Módulo para utilizar el servicio web Constatación de Comprobantes de AFIP"
-from __future__ import print_function
-from __future__ import absolute_import
+#from __future__ import print_function
+#from __future__ import absolute_import
 
 # Información adicional y documentación:
 # http://www.sistemasagiles.com.ar/trac/wiki/ConstatacionComprobantes
