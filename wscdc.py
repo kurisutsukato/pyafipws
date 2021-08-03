@@ -17,9 +17,9 @@
 # Información adicional y documentación:
 # http://www.sistemasagiles.com.ar/trac/wiki/ConstatacionComprobantes
 
-from future import standard_library
+#from future import standard_library
 
-standard_library.install_aliases()
+#standard_library.install_aliases()
 from builtins import str
 
 __author__ = "Mariano Reingart (reingart@gmail.com)"

@@ -18,9 +18,9 @@
 # Documentación e información adicional:
 #    http://www.sistemasagiles.com.ar/trac/wiki/PadronContribuyentesAFIP
 
-from future import standard_library
+#from future import standard_library
 
-standard_library.install_aliases()
+#standard_library.install_aliases()
 from builtins import next
 from builtins import str
 from builtins import range

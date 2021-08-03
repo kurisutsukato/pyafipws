@@ -17,9 +17,9 @@
 # Información adicional y documentación:
 # http://www.sistemasagiles.com.ar/trac/wiki/TrazabilidadProductosVeterinarios
 
-from future import standard_library
+#from future import standard_library
 
-standard_library.install_aliases()
+#standard_library.install_aliases()
 __author__ = "Mariano Reingart <reingart@gmail.com>"
 __copyright__ = "Copyright (C) 2014-2021 Mariano Reingart"
 __license__ = "LGPL-3.0-or-later+"
