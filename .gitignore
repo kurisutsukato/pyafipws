@@ -35,3 +35,9 @@ nosetests.xml
 .pydevproject
 kristukat.crt
 kristukat.key
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/pyafipws.iml
+.idea/vcs.xml
+.idea/workspace.xml
